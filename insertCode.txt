@@ -1,0 +1,11 @@
+activations = ['sigmoid', 'relu', 'elu', 'tanh']
+totalAccuracy = []
+
+for i in activations:
+    activation_list = []
+    for j in range(functionCount):
+        activation_list.append(i)
+    totalAccuracy.append(callAI(activation_list))
+
+for i in totalAccuracy:
+    print(i)
